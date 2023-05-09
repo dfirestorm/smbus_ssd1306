@@ -43,7 +43,7 @@ class SSD1306Base(object):
     """
 
     def __init__(self, width, height):
-        self.i2c = SMBus(0)
+        self.i2c = SMBus(2)
         self.width = width
         self.height = height
         self._pages = height//8
